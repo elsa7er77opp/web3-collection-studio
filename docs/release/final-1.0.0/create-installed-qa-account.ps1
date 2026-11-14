@@ -1,3 +1,8 @@
+param(
+    [Parameter(Mandatory)]
+    [SecureString]$QaPassword
+)
+
 Add-Type -AssemblyName UIAutomationClient
 Add-Type -AssemblyName UIAutomationTypes
 $process = Get-Process Web3CollectionStudio.Desktop | Select-Object -First 1
@@ -10,12 +15,17 @@ function Find-ByAutomationId([string]$automationId) {
 }
 
 $username = 'final.qa'
-$password = 'FinalQa!2026'
-foreach ($entry in @(@('UsernameBox', $username), @('PasswordBox', $password), @('PasswordConfirmationBox', $password))) {
-    $element = Find-ByAutomationId $entry[0]
-    if ($null -eq $element) { throw "QA setup control $($entry[0]) was not found." }
-    $pattern = $element.GetCurrentPattern([System.Windows.Automation.ValuePattern]::Pattern)
-    ([System.Windows.Automation.ValuePattern]$pattern).SetValue($entry[1])
+# UI Automation requires a plaintext string at the point of entry.
+$password = [System.Net.NetworkCredential]::new('', $QaPassword).Password
+try {
+    foreach ($entry in @(@('UsernameBox', $username), @('PasswordBox', $password), @('PasswordConfirmationBox', $password))) {
+        $element = Find-ByAutomationId $entry[0]
+        if ($null -eq $element) { throw "QA setup control $($entry[0]) was not found." }
+        $pattern = $element.GetCurrentPattern([System.Windows.Automation.ValuePattern]::Pattern)
+        ([System.Windows.Automation.ValuePattern]$pattern).SetValue($entry[1])
+    }
+} finally {
+    Remove-Variable password, entry -ErrorAction SilentlyContinue
 }
 
 $button = $window.FindFirst(

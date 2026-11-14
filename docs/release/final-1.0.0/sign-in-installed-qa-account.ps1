@@ -1,3 +1,8 @@
+param(
+    [Parameter(Mandatory)]
+    [SecureString]$QaPassword
+)
+
 Add-Type -AssemblyName UIAutomationClient
 Add-Type -AssemblyName UIAutomationTypes
 
@@ -10,11 +15,17 @@ function Find-ByAutomationId([string]$automationId) {
         (New-Object System.Windows.Automation.PropertyCondition([System.Windows.Automation.AutomationElement]::AutomationIdProperty, $automationId)))
 }
 
-foreach ($entry in @(@('UsernameBox', 'final.qa'), @('PasswordBox', 'FinalQa!2026'))) {
-    $element = Find-ByAutomationId $entry[0]
-    if ($null -eq $element) { throw "QA sign-in control $($entry[0]) was not found." }
-    $pattern = $element.GetCurrentPattern([System.Windows.Automation.ValuePattern]::Pattern)
-    ([System.Windows.Automation.ValuePattern]$pattern).SetValue($entry[1])
+# UI Automation requires a plaintext string at the point of entry.
+$password = [System.Net.NetworkCredential]::new('', $QaPassword).Password
+try {
+    foreach ($entry in @(@('UsernameBox', 'final.qa'), @('PasswordBox', $password))) {
+        $element = Find-ByAutomationId $entry[0]
+        if ($null -eq $element) { throw "QA sign-in control $($entry[0]) was not found." }
+        $pattern = $element.GetCurrentPattern([System.Windows.Automation.ValuePattern]::Pattern)
+        ([System.Windows.Automation.ValuePattern]$pattern).SetValue($entry[1])
+    }
+} finally {
+    Remove-Variable password, entry -ErrorAction SilentlyContinue
 }
 
 $button = $window.FindFirst(
