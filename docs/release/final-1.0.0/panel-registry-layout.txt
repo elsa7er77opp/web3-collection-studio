@@ -1,0 +1,8 @@
+PanelLaunchService.cs
+PanelRegistrationService.cs
+PanelRegistryViewModelFactory.cs
+LocalAppManifestReader.cs
+LocalAppRegistry.cs
+PanelLaunchAuditStore.cs
+TrustedAppLauncher.cs
+CyberBankAppManifest.cs

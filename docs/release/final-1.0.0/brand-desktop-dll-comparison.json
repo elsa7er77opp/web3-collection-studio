@@ -1,0 +1,18 @@
+﻿[
+    {
+        "Label":  "Published payload",
+        "Path":  "C:\\Users\\ahmed\\Desktop\\cyberbank\\web3-collection-studio\\artifacts\\Web3CollectionStudio-Final-win-x64\\Web3CollectionStudio.Desktop.dll",
+        "Bytes":  56374784,
+        "SHA256":  "427E121AA78C9118E3F0E8328E60D85D6D1B8C713A52E27DE23BE6DB09C79580",
+        "FileVersion":  "1.0.0.0",
+        "ProductVersion":  "1.0.0"
+    },
+    {
+        "Label":  "Installed LocalAppData",
+        "Path":  "C:\\Users\\ahmed\\AppData\\Local\\Programs\\CyberBank\\Web3 Collection Studio\\Web3CollectionStudio.Desktop.dll",
+        "Bytes":  59688960,
+        "SHA256":  "AF5C341D74488A9E8F370E4836281302CA00EE751CA8F0EB8C94361DC0B9EBFB",
+        "FileVersion":  "1.0.0.0",
+        "ProductVersion":  "1.0.0"
+    }
+]

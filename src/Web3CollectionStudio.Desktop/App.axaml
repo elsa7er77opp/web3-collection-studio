@@ -1,0 +1,37 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Web3CollectionStudio.Desktop.App"
+             xmlns:local="using:Web3CollectionStudio.Desktop"
+             RequestedThemeVariant="Dark">
+
+    <Application.DataTemplates>
+        <local:ViewLocator />
+    </Application.DataTemplates>
+
+    <Application.Styles>
+        <FluentTheme />
+        <Style Selector="Window">
+            <Setter Property="Background" Value="#070914" />
+            <Setter Property="Foreground" Value="#F5F3FF" />
+        </Style>
+        <Style Selector="TextBlock">
+            <Setter Property="Foreground" Value="#F5F3FF" />
+        </Style>
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="#0C1020" />
+            <Setter Property="Foreground" Value="#F5F3FF" />
+            <Setter Property="BorderBrush" Value="#252B4A" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Padding" Value="12,10" />
+            <Setter Property="CornerRadius" Value="6" />
+        </Style>
+        <Style Selector="TextBox:focus">
+            <Setter Property="BorderBrush" Value="#8B5CF6" />
+        </Style>
+        <Style Selector="Button">
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="Padding" Value="14,9" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+        </Style>
+    </Application.Styles>
+</Application>

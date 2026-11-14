@@ -1,0 +1,47 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Web3CollectionStudio.Desktop.ViewModels"
+        x:Class="Web3CollectionStudio.Desktop.Views.SplashWindow"
+        x:DataType="vm:SplashViewModel"
+        Title="CyberBank NFT Studio"
+        Width="1020"
+        Height="620"
+        CanResize="False"
+        WindowStartupLocation="CenterScreen"
+        Background="#060715">
+    <Grid ColumnDefinitions="0.9*,1.1*">
+        <Border Background="#080A1A" Padding="52">
+            <Grid RowDefinitions="*,auto">
+                <StackPanel VerticalAlignment="Center" Spacing="14">
+                    <TextBlock Text="CYBERBANK" FontSize="12" FontWeight="Bold" LetterSpacing="2" Foreground="#C4B5FD" />
+                    <TextBlock Text="NFT COLLECTION&#x0a;STUDIO" FontSize="37" FontWeight="SemiBold" LineHeight="41" />
+                    <TextBlock Text="Local Digital Collection Workstation" FontSize="15" Foreground="#AAB2D4" Margin="0,8,0,0" />
+                    <Border Height="1" Background="#2A2A52" Margin="0,18" />
+                    <TextBlock Text="Local projects · layered traits · controlled exports" FontSize="12" Foreground="#7F89B2" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Spacing="4">
+                    <TextBlock Text="LOCAL-FIRST CREATIVE TOOLING" FontSize="10" FontWeight="Bold" LetterSpacing="1.1" Foreground="#9788D7" />
+                    <TextBlock Text="Assets stay on this computer. No wallets, minting, cloud upload, or financial actions." TextWrapping="Wrap" FontSize="11" Foreground="#6F789D" />
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Border Grid.Column="1" Background="#0B0B24" Padding="56">
+            <Grid RowDefinitions="*,auto" HorizontalAlignment="Stretch">
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="430" Height="430">
+                    <Border Background="#17113C" CornerRadius="182.5" Opacity="0.55" />
+                    <Border Margin="18" BorderBrush="#6D4BD5" BorderThickness="1" CornerRadius="164" Opacity="0.8" />
+                    <Image x:Name="BrandMarkImage" Source="/Assets/Brand/nft-studio-prismatic-l.png" Stretch="Uniform" />
+                    <Border Width="30" Height="30" CornerRadius="15" Background="#E3D8FF" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,30,40,0" Opacity="0.9" />
+                </Grid>
+                <StackPanel Grid.Row="1" Spacing="10">
+                    <Grid ColumnDefinitions="*,auto">
+                        <TextBlock Text="{Binding StatusLine}" FontSize="11" FontWeight="Bold" LetterSpacing="0.9" Foreground="#D8CEFF" />
+                        <TextBlock Grid.Column="1" Text="{Binding ProgressPercent, StringFormat={}{0}%}" FontSize="11" Foreground="#B7A8F7" />
+                    </Grid>
+                    <ProgressBar Value="{Binding ProgressPercent}" Maximum="100" Height="5" Foreground="#8B5CF6" Background="#25234A" />
+                    <TextBlock Text="Assets · traits engine · metadata system" FontSize="11" Foreground="#7881A8" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,248 @@
+﻿[
+    {
+        "Name":  "CB",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "CYBERBANK PANEL",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "LOCAL APPLICATION REGISTRY / WINDOWS",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "LOCAL ONLY",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "REGISTRY HEALTHY",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "CONTROL",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Overview",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Installed products",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Activity",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Diagnostics",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "PRODUCT BOUNDARY",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Separate apps. Separate data.",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "CyberBank / local control",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "INSTALLED PRODUCTS",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Only explicit local manifests are listed. Panel never opens product databases, credentials, or source assets.",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Register local app",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  true
+    },
+    {
+        "Name":  "PRODUCT",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "VERSION",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "STATUS",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "CAPABILITIES",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "CyberBank NFT Studio",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "web3-collection-studio",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "1.0.0",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "AVAILABLE",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "LOCAL CAPABILITIES",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Inspect",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Empty registry is a safe state: register a product only from its explicit cyberbank-app.json manifest beside the installed executable.",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "PRODUCT INSPECTOR",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "CyberBank NFT Studio",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "web3-collection-studio",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "INSTALLATION STATUS",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Registered executable and icon are available locally.",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "AVAILABLE",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "REGISTRY INFORMATION",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Version is shown from the registered local manifest. Product storage remains isolated.",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "LOCAL ACTIONS",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Launch requires an explicit action. No automatic startup or background control is enabled.",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Launch selected product",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  true
+    },
+    {
+        "Name":  "View safe diagnostics",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  true
+    },
+    {
+        "Name":  "LOCAL REGISTRY READY",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    },
+    {
+        "Name":  "NO CLOUD SYNC • NO EMBEDDED PRODUCT WINDOWS",
+        "AutomationId":  "",
+        "Type":  "ControlType.Text",
+        "Enabled":  true
+    }
+]

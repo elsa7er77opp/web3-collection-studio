@@ -1,0 +1,81 @@
+# Web3 Collection Studio — Build TODO
+
+- [x] Create a clean .NET solution separate from Secure Code Shield and deleted prototypes.
+- [x] Define the local-first product architecture and the PFP, Badge/Gaming, and Digital Art collection profiles.
+- [x] Add a local user account gate with strong password hashing, temporary rate limiting, and no raw-password persistence.
+- [x] Add collection-project identity and versioned manifest contracts under the local project root.
+- [x] Add canonical local-root containment contracts for the project manifest and asset paths.
+- [x] Add backup/recovery contracts for the project manifest.
+- [x] Add profile-aware canvas defaults and validation for PFP, Badge/Gaming, and Digital Art projects.
+- [x] Add ordered layers, trait options, weights, and compatibility Require/Exclude rules.
+- [x] Add duplicate-prevention fingerprints and a preflight report for invalid assets, impossible rules, and over-requested unique output counts.
+- [x] Add local PFP, Badge/Gaming, and Digital Art project creation from the Desktop Workstation with manifest persistence.
+- [x] Add ordered local PNG composition with atomic temporary-to-final output and bounded per-layer bitmap usage.
+- [x] Add local OpenSea-style JSON metadata writing with relative image paths and traits.
+- [x] Add a bounded local Application render queue with queued/running/cancelled/completed job states.
+- [x] Add measurable progress snapshots to local Application render jobs.
+- [x] Connect the bounded render queue to local PNG composition through the Desktop service layer.
+- [x] Add bounded local PNG render queue with progress, cancellation, atomic output, and safe local audit events.
+- [x] Add OpenSea-style local metadata export with relative image paths only.
+- [ ] Build the violet/indigo splash, local login, Collection Workstation, collection browser, canvas/gallery/compare view, inspector, preflight, and render queue.
+- [x] Design CyberBank Panel as a separate Desktop application for local app registry, launch, version, and health views.
+- [x] Package and clean-install-test the Windows Alpha without wallet, minting, cloud, or financial features.
+- [x] Add a true Windows EXE icon, explicit Panel manifest, self-contained x64 publish, and per-user Inno Setup installer for Collection Studio.
+- [x] Diagnose and repair the reported Windows Alpha launch failure, then repeat clean-install and launch verification.
+- [ ] Audit Collection Studio against Secure Code Shield and the approved violet visual guide to define an explicit premium desktop quality bar.
+- [ ] Redesign the authenticated Collection Workstation as a true violet/indigo desktop workstation with coherent canvas, collection browser, inspector, and queue zones.
+- [ ] Rebuild the Splash and local Login transition with the same production-level hierarchy, spacing, and state treatment as the approved desktop reference.
+- [ ] Perform visual and functional acceptance on the redesigned Windows build before issuing an updated installer.
+- [x] Replace the three-zone workstation with the approved four-column desktop hierarchy: labeled navigation, collection explorer, dense center workspace, and deep inspector.
+- [x] Add Collection Studio equivalents of the reference workstation’s operational density: collection status row, local asset/layer ledger, canvas command strip, and generation/rarity lower split.
+- [ ] Audit and improve the four-column Workstation’s empty, selected-project, disabled-command, and local recovery states.
+- [x] Bind the visible collection explorer, canvas workspace, inspector, and queue status to genuine local project state instead of structural placeholders.
+- [x] Re-run clean-install visual and functional acceptance for the final improved Collection Studio build.
+- [x] Execute end-to-end local acceptance for login, PFP, Badge/Gaming, and Digital Art creation, preflight, and visible Workstation state transitions.
+- [x] Add interactive local layer management with a named layer ledger and selection state in the Collection Explorer and Inspector.
+- [x] Add local PNG asset selection with project-root containment and visible asset/trait state.
+- [x] Implement functional Canvas, Gallery, and Compare workspace modes without fabricated collection analytics.
+- [x] Refresh the Windows installer after the interactive Collection Studio improvements pass acceptance.
+- [x] Correct the installer publish-root mismatch and verify the installed payload contains the interactive Collection Studio build.
+- [x] Adopt the supplied NFT Studio identity as the approved visual reference while retaining local-only Create, Manage, Preview, and Export boundaries.
+- [x] Add an original production-ready NFT Studio app mark and apply it to the EXE icon, Splash, Login, and Workstation branding.
+- [x] Repackage and verify the Windows installer after the NFT Studio identity update.
+- [x] Complete the NFT Studio identity as one verified bundle: approved master mark, EXE ICO, consistent Splash/Login/Workstation usage, and installed-payload verification.
+- [x] Increase and rebalance the NFT Studio mark so Splash/Login lead with the product symbol while Workstation uses a compact legible product mark.
+- [x] Replace the square brand image used as an icon with a tightly cropped, true-alpha NFT Studio symbol and separate it from the Splash visual.
+- [x] Remove the checkerboard background from the standalone Login symbol and preserve a clean native-app background.
+- [x] Correct the Login title and lower-left spacing so no label overlaps the Local Security card.
+- [x] Replace the previous NFT Studio mark with a calm original globe-L symbol: single L monogram, restrained globe lines, no hex, no NFT text, and native icon readability.
+- [x] Apply the globe-L symbol consistently to the EXE icon, Splash, Login, and Workstation before final packaging.
+- [x] Audit the current Web3 Collection Studio implementation against Alpha release gaps and document the exact Final Edition delta before changing behavior.
+- [x] Close verified local recovery, project-profile, and Panel registration acceptance gaps without adding wallet, key, minting, marketplace, or network behavior.
+- [x] Produce a versioned Web3 Collection Studio Final Windows installer, verify clean per-user installation and launch, and record current tests/build/hash/smoke evidence.
+- [x] Add a test-first `Open local collection` Desktop command backed by existing local manifest recovery, including invalid-folder and backup-recovery behavior.
+- [x] Revalidate the Final installed `cyberbank-app.json`, executable, and icon as a confined local Panel registration bundle.
+- [x] Produce an evidence-based current-state report for the owner covering implemented NFT Studio capabilities, Alpha evidence, paused Final work, and unresolved Final gates.
+- [x] Deliver the current NFT Studio status report to the owner with the active release state, delivery locations, local-only boundary, and exact Final blockers.
+- [x] Write the bounded Final 1.0.0 implementation and acceptance plan, including each required RED/GREEN contract and no-scope-creep constraints.
+- [x] Add a visible `Open Local Collection` MainWindow command using native folder selection, preserving project profile, layers, traits, weights, rules, selected assets, and local project state.
+- [x] Surface loading, success, invalid project, corrupt-primary, backup-recovery, and unrecoverable-project states visibly in the Workstation without silent creation, deletion, or logs-only failures.
+- [x] Prove backup recovery, invalid-folder handling, and local recovery audit through the actual installed Desktop command with safe fixtures.
+- [ ] Run installed acceptance matrices for PFP, Badge/Gaming, and Digital Art: creation, layers, PNG traits, weights/rules, preflight, generation, cancellation, Gallery/Compare, metadata, close/reopen, and persistence.
+- [x] Verify local output integrity, atomic cancelled-run behavior, metadata relative paths, post-cancellation recovery, and application restart without phantom jobs.
+- [x] Update user-visible metadata and installer naming from Alpha 0.1.0 to Final 1.0.0, revalidate installed Panel manifest/executable/icon confinement, and document any unavailable Panel launch verification.
+- [x] Run the current full solution regression and fresh self-contained Release win-x64 publish; record exact pass/fail/skip totals and warnings/errors.
+- [x] Compile, hash, silently install, and launch the new Final installer; run all acceptance only from the installed executable.
+- [x] Create the complete `docs/release/final-1.0.0/` evidence bundle and issue exactly one verified/not-verified Final release decision.
+- [x] Add visible local-only Workstation commands for one composed PNG render, cancellation, and local metadata export; bind queue/progress/output feedback to actual services instead of static Generation Queue copy.
+- [x] Isolate the existing local QA account non-destructively, complete installed acceptance with a new QA account, and preserve a restorable backup without touching collection projects/assets.
+- [x] Replace the owner-rejected globe-L NFT Studio identity with an approved distinct logo direction after functional Final gates are complete, then rebuild and reverify the packaged identity bundle.
+- [x] Generate and validate the approved Prismatic L Studio Mark: an original geometric L integrated into layered collection facets, violet/cobalt palette, readable at Windows icon size, with no globe, no NFT wording, and no pasted-on letter.
+- [x] Replace the rejected glossy 3D Prismatic L concept with a flat or restrained semi-flat mark: simple silhouette, two-to-three geometric facets only, structurally integrated L, precise violet/cobalt palette, no shards, no noise, no green-screen artifacts, and no generic AI glass effect.
+- [x] Integrate the owner-approved Flat Prismatic L option 2 into master PNG/ICO assets and Login/Splash/MainWindow references, then rebuild, reinstall, and visually verify the installed identity bundle. Login and Workstation were visually verified; Splash uses the documented owner-approved GPU capture waiver plus the source asset-route contract.
+- [x] Resolve the packaged identity mismatch: source/XAML contract uses Flat Prismatic L but the rebuilt installed Login still shows globe-L; trace the actual compiled payload and runtime asset route, then rebuild/reinstall and recapture before approving the identity bundle.
+- [x] Resolve the installed rich-backup recovery discrepancy: trace why valid `project.json.bak` is reported unrecoverable through Open Local Collection, add a RED reproduction contract for the actual failure boundary, then repackage and retest recovery/audit evidence from the installed EXE. Root cause was a native-picker trailing separator mismatch; post-fix installed recovery/audit now pass.
+- [x] Resolve the installed cancellation discrepancy: trace why the native Cancel command is accepted while a new PNG output is still produced, add a RED contract for the real render boundary, then repackage and retest cancellation/output gating from the installed EXE. The initial click occurred after a fast job completed; current Final UI enables cancel only for queued/active work, and installed queued cancellation produced no output.
+- [x] Repair the approved Flat Prismatic L master asset alpha: remove the baked checkerboard/white-square background, add a RED asset contract that detects opaque background contamination, regenerate PNG/ICO outputs, then repackage and visually verify the installed Login/Splash/Workstation identity bundle. Login and Workstation are visual runtime proof; Splash has the documented owner-approved GPU capture waiver and source route contract.
+- [x] Create a structured `DELIVERY/` folder for the current Web3 Collection Studio 1.0.0 Candidate containing the installer, checksum, reports, retained evidence, and a precise NOT VERIFIED status README.
+- [ ] Capture and inspect fresh installed Splash and full Workstation identity screens showing the Flat Prismatic L without alpha/background artifacts, then retain the valid screenshots in DELIVERY evidence.
+- [x] Validate CyberBank Panel host launch against the installed manifest when a host is available, or record an owner-approved operational waiver that preserves the distinction from an executed host-launch test. The local Panel host registered the installed manifest as AVAILABLE and launched NFT Studio via its UI.
+- [x] Reconcile all Final gates, refresh DELIVERY, and change the release decision to VERIFIED only when every required evidence gate or approved waiver is documented.
+- [x] Create an owner-readable Arabic Markdown report that records the full Web3 Collection Studio chat implementation, repair history, tests, installer fingerprint, DELIVERY contents, and exact Final decision.

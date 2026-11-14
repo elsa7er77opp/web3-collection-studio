@@ -1,0 +1,4 @@
+Views\LoginWindow.axaml
+Views\MainWindow.axaml
+Views\SplashWindow.axaml
+Web3CollectionStudio.Desktop.csproj

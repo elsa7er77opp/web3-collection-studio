@@ -1,0 +1,107 @@
+﻿[
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "◇  UNIQUE OUTPUTS",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "2. Add ordered PNG layers",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "4. Render and export",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Bounded worker 1 · cancellation ready",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Button",
+        "Text":  "Cancel local render",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Cancellation available",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Create a local collection to assemble ordered PNG layers, trait distributions, and compatibility rules.",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Create a PFP, Badge/Gaming, or Digital Art collection. The canvas previews layers locally and stays separate from final rendering.",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Button",
+        "Text":  "Export local metadata",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Export writes local PNG and JSON files only. No wallet, IPFS, minting, cloud sync, or marketplace operation is available.",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "GENERATION QUEUE",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Button",
+        "Text":  "Import PNG trait",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "LOCAL PNG ASSETS",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Local queue",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "METADATA",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Metadata preview",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "PNG layers · trait rules · metadata export",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "PNG paths are relative to the selected collection root. Absolute paths and files outside the project are rejected.",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Queue settings",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Button",
+        "Text":  "Render one local PNG",
+        "Enabled":  true
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Select a PNG file. Collection Studio copies it into this project, stores only a relative path, and keeps the original untouched.",
+        "Enabled":  true
+    }
+]

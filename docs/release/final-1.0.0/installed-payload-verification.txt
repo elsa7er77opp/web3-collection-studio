@@ -1,0 +1,7 @@
+﻿InstallRoot: C:\Users\ahmed\AppData\Local\Programs\CyberBank\Web3 Collection Studio
+Executable: C:\Users\ahmed\AppData\Local\Programs\CyberBank\Web3 Collection Studio\Web3CollectionStudio.Desktop.exe
+Manifest: C:\Users\ahmed\AppData\Local\Programs\CyberBank\Web3 Collection Studio\cyberbank-app.json
+Icon: C:\Users\ahmed\AppData\Local\Programs\CyberBank\Web3 Collection Studio\Assets\Brand\collection-studio-app-icon.ico
+PanelVersion: 1.0.0
+PanelExecutablePath: Web3CollectionStudio.Desktop.exe
+PanelIconPath: Assets/Brand/collection-studio-app-icon.ico

@@ -1,0 +1,158 @@
+﻿[
+    {
+        "Name":  "Open local project",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  true
+    },
+    {
+        "Name":  "New collection",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  true
+    },
+    {
+        "Name":  "...",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Avalonia.Controls.StackPanel",
+        "AutomationId":  "",
+        "Type":  "ControlType.RadioButton",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Avalonia.Controls.StackPanel",
+        "AutomationId":  "",
+        "Type":  "ControlType.RadioButton",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Avalonia.Controls.StackPanel",
+        "AutomationId":  "",
+        "Type":  "ControlType.RadioButton",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Avalonia.Controls.StackPanel",
+        "AutomationId":  "",
+        "Type":  "ControlType.RadioButton",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Avalonia.Controls.StackPanel",
+        "AutomationId":  "",
+        "Type":  "ControlType.RadioButton",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Avalonia.Controls.StackPanel",
+        "AutomationId":  "",
+        "Type":  "ControlType.RadioButton",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Avalonia.Controls.StackPanel",
+        "AutomationId":  "",
+        "Type":  "ControlType.RadioButton",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Avalonia.Controls.StackPanel",
+        "AutomationId":  "",
+        "Type":  "ControlType.RadioButton",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Avalonia.Controls.StackPanel",
+        "AutomationId":  "",
+        "Type":  "ControlType.RadioButton",
+        "Enabled":  true
+    },
+    {
+        "Name":  "+ Layer",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  false
+    },
+    {
+        "Name":  "Canvas",
+        "AutomationId":  "",
+        "Type":  "ControlType.RadioButton",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Gallery",
+        "AutomationId":  "",
+        "Type":  "ControlType.RadioButton",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Compare",
+        "AutomationId":  "",
+        "Type":  "ControlType.RadioButton",
+        "Enabled":  true
+    },
+    {
+        "Name":  "",
+        "AutomationId":  "",
+        "Type":  "ControlType.Edit",
+        "Enabled":  true
+    },
+    {
+        "Name":  "All traits  ⌄",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Run preflight",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  false
+    },
+    {
+        "Name":  "Create local collection",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Render one local PNG",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  false
+    },
+    {
+        "Name":  "Cancel local render",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  false
+    },
+    {
+        "Name":  "Import PNG trait",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  false
+    },
+    {
+        "Name":  "",
+        "AutomationId":  "TraitWeightTextBox",
+        "Type":  "ControlType.Edit",
+        "Enabled":  true
+    },
+    {
+        "Name":  "Save trait weight",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  false
+    },
+    {
+        "Name":  "Export local metadata",
+        "AutomationId":  "",
+        "Type":  "ControlType.Button",
+        "Enabled":  false
+    }
+]

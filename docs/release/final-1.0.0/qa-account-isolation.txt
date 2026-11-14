@@ -1,0 +1,3 @@
+﻿Action: account.json moved to QA backup; no collection project or asset path was accessed.
+StateDirectory: C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio
+BackupFile: C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\account.json.qa-isolated-20260825-133712.bak

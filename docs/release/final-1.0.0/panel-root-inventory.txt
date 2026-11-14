@@ -1,0 +1,8 @@
+artifacts
+CyberBankPanel.slnx
+docs
+installer
+src
+tests
+todo.md
+tools

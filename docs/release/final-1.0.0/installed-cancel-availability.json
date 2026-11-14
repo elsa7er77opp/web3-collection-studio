@@ -1,0 +1,7 @@
+﻿{
+    "CancelButtonFound":  true,
+    "CancelButtonEnabled":  false,
+    "AvailabilityTexts":  [
+                              "No active local render"
+                          ]
+}

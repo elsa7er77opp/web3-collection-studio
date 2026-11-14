@@ -1,0 +1,17 @@
+﻿
+FullName                                                                                                                                                                                       Length LastWriteTime        
+--------                                                                                                                                                                                       ------ -------------        
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\.collection-studio                                                              8/25/2026 12:12:09 PM
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\assets                                                                          8/25/2026 12:12:09 PM
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\metadata                                                                        8/25/2026 12:18:49 PM
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\outputs                                                                         8/25/2026 12:14:56 PM
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\render-events.jsonl                                                      389    8/25/2026 12:14:56 PM
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\.collection-studio\project.json                                          689    8/25/2026 12:12:09 PM
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\.collection-studio\project.json.bak                                      495    8/24/2026 8:34:29 PM 
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\assets\Background                                                               8/25/2026 12:12:09 PM
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\assets\Background\acceptance-indigo-5c38fb2f990b434c9c285a9a99ff526e.png 442    8/24/2026 8:35:33 PM 
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\metadata\0001.json                                                       208    8/25/2026 12:18:49 PM
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\outputs\preview-88151e77ce17435db513649aadf57b2d.png                     411    8/25/2026 12:14:56 PM
+
+
+

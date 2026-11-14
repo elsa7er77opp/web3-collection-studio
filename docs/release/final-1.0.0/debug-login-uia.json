@@ -1,0 +1,122 @@
+﻿[
+    {
+        "ControlType":  "ControlType.Group",
+        "Name":  "WindowChrome",
+        "AutomationId":  "AvaloniaWindowChrome",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Image",
+        "Name":  "",
+        "AutomationId":  "",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "CYBERBANK",
+        "AutomationId":  "",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "NFT COLLECTION STUDIO",
+        "AutomationId":  "",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Image",
+        "Name":  "",
+        "AutomationId":  "",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "CREATE YOUR LOCAL WORKSPACE",
+        "AutomationId":  "ModeTitle",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "Your collection projects, source assets, render queue, and metadata remain local to this Windows profile.",
+        "AutomationId":  "",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "LOCAL SECURITY",
+        "AutomationId":  "",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "Passwords are never retained in plaintext. Local sign-in uses protected password verification and temporary lockout after repeated failures.",
+        "AutomationId":  "",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "No wallet · No seed phrase · No minting · No cloud upload",
+        "AutomationId":  "",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "CREATE LOCAL ACCOUNT",
+        "AutomationId":  "FormTitle",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "Create the first administrator for this Windows profile.",
+        "AutomationId":  "FormCaption",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "USERNAME",
+        "AutomationId":  "",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Edit",
+        "Name":  "",
+        "AutomationId":  "UsernameBox",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "PASSWORD",
+        "AutomationId":  "",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Edit",
+        "Name":  "",
+        "AutomationId":  "PasswordBox",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "CONFIRM PASSWORD",
+        "AutomationId":  "",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Edit",
+        "Name":  "",
+        "AutomationId":  "PasswordConfirmationBox",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Text",
+        "Name":  "Create the first local administrator for this collection workspace.",
+        "AutomationId":  "StatusText",
+        "IsEnabled":  true
+    },
+    {
+        "ControlType":  "ControlType.Button",
+        "Name":  "CONTINUE LOCALLY",
+        "AutomationId":  "",
+        "IsEnabled":  true
+    }
+]

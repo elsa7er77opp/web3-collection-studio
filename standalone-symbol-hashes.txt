@@ -1,0 +1,6 @@
+SHA256 hash of artifacts\installer\CyberBank-Web3-Collection-Studio-Alpha-Setup-win-x64.exe:
+9e576de154feb9ef063b0c8b186193a47c6f90a8bb7ca12bf86ef1c1720eac7c
+CertUtil: -hashfile command completed successfully.
+SHA256 hash of artifacts\CyberBank-Web3-Collection-Studio-Alpha-win-x64.zip:
+2dab69379e211cd41f1cc77e3f9d8cf453a0c737fca6c906ef36376e1214164b
+CertUtil: -hashfile command completed successfully.

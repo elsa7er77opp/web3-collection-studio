@@ -1,0 +1,248 @@
+﻿[
+    {
+        "Handle":  5573822,
+        "Id":  0,
+        "Class":  "DUIViewWndClassName",
+        "Text":  ""
+    },
+    {
+        "Handle":  1641428,
+        "Id":  0,
+        "Class":  "DirectUIHWND",
+        "Text":  ""
+    },
+    {
+        "Handle":  1640126,
+        "Id":  0,
+        "Class":  "CtrlNotifySink",
+        "Text":  ""
+    },
+    {
+        "Handle":  1510554,
+        "Id":  0,
+        "Class":  "NamespaceTreeControl",
+        "Text":  "Namespace Tree Control"
+    },
+    {
+        "Handle":  1640274,
+        "Id":  0,
+        "Class":  "Static",
+        "Text":  "Namespace Tree Control"
+    },
+    {
+        "Handle":  5836176,
+        "Id":  100,
+        "Class":  "SysTreeView32",
+        "Text":  "Navigation Pane"
+    },
+    {
+        "Handle":  2360654,
+        "Id":  0,
+        "Class":  "CtrlNotifySink",
+        "Text":  ""
+    },
+    {
+        "Handle":  2821198,
+        "Id":  1121,
+        "Class":  "SHELLDLL_DefView",
+        "Text":  "ShellView"
+    },
+    {
+        "Handle":  2493922,
+        "Id":  0,
+        "Class":  "DirectUIHWND",
+        "Text":  ""
+    },
+    {
+        "Handle":  6622670,
+        "Id":  0,
+        "Class":  "CtrlNotifySink",
+        "Text":  ""
+    },
+    {
+        "Handle":  1902318,
+        "Id":  0,
+        "Class":  "ScrollBar",
+        "Text":  ""
+    },
+    {
+        "Handle":  3935282,
+        "Id":  0,
+        "Class":  "CtrlNotifySink",
+        "Text":  ""
+    },
+    {
+        "Handle":  331176,
+        "Id":  0,
+        "Class":  "ScrollBar",
+        "Text":  ""
+    },
+    {
+        "Handle":  2427952,
+        "Id":  1090,
+        "Class":  "Static",
+        "Text":  "Folder:"
+    },
+    {
+        "Handle":  4722048,
+        "Id":  1152,
+        "Class":  "Edit",
+        "Text":  ""
+    },
+    {
+        "Handle":  6753636,
+        "Id":  1,
+        "Class":  "Button",
+        "Text":  "Select Folder"
+    },
+    {
+        "Handle":  1707380,
+        "Id":  2,
+        "Class":  "Button",
+        "Text":  "Cancel"
+    },
+    {
+        "Handle":  7670378,
+        "Id":  -1,
+        "Class":  "ScrollBar",
+        "Text":  ""
+    },
+    {
+        "Handle":  8129208,
+        "Id":  1092,
+        "Class":  "Static",
+        "Text":  ""
+    },
+    {
+        "Handle":  2820524,
+        "Id":  1091,
+        "Class":  "Static",
+        "Text":  ""
+    },
+    {
+        "Handle":  11209344,
+        "Id":  1093,
+        "Class":  "Static",
+        "Text":  ""
+    },
+    {
+        "Handle":  2492246,
+        "Id":  1120,
+        "Class":  "ListBox",
+        "Text":  ""
+    },
+    {
+        "Handle":  3409210,
+        "Id":  1095,
+        "Class":  "Static",
+        "Text":  ""
+    },
+    {
+        "Handle":  5245980,
+        "Id":  1038,
+        "Class":  "Button",
+        "Text":  "\u0026Help"
+    },
+    {
+        "Handle":  8326188,
+        "Id":  0,
+        "Class":  "WorkerW",
+        "Text":  ""
+    },
+    {
+        "Handle":  5702332,
+        "Id":  40965,
+        "Class":  "ReBarWindow32",
+        "Text":  ""
+    },
+    {
+        "Handle":  4525504,
+        "Id":  0,
+        "Class":  "TravelBand",
+        "Text":  ""
+    },
+    {
+        "Handle":  1379716,
+        "Id":  0,
+        "Class":  "ToolbarWindow32",
+        "Text":  "Navigation buttons"
+    },
+    {
+        "Handle":  855510,
+        "Id":  0,
+        "Class":  "UpBand",
+        "Text":  ""
+    },
+    {
+        "Handle":  7212374,
+        "Id":  0,
+        "Class":  "ToolbarWindow32",
+        "Text":  "Up band"
+    },
+    {
+        "Handle":  6425636,
+        "Id":  41477,
+        "Class":  "Address Band Root",
+        "Text":  ""
+    },
+    {
+        "Handle":  4000964,
+        "Id":  0,
+        "Class":  "msctls_progress32",
+        "Text":  ""
+    },
+    {
+        "Handle":  4132206,
+        "Id":  0,
+        "Class":  "Breadcrumb Parent",
+        "Text":  ""
+    },
+    {
+        "Handle":  4984194,
+        "Id":  1001,
+        "Class":  "ToolbarWindow32",
+        "Text":  "Address: C:\\Users\\ahmed\\Desktop\\cyberbank\\web3-collection-studio\\docs\\release\\final-1.0.0\\fixtures"
+    },
+    {
+        "Handle":  3804604,
+        "Id":  0,
+        "Class":  "ToolbarWindow32",
+        "Text":  "Address band"
+    },
+    {
+        "Handle":  1707316,
+        "Id":  0,
+        "Class":  "SeparatorBand",
+        "Text":  ""
+    },
+    {
+        "Handle":  1051134,
+        "Id":  0,
+        "Class":  "UniversalSearchBand",
+        "Text":  ""
+    },
+    {
+        "Handle":  5311764,
+        "Id":  0,
+        "Class":  "Search Box",
+        "Text":  ""
+    },
+    {
+        "Handle":  5770724,
+        "Id":  0,
+        "Class":  "SearchEditBoxWrapperClass",
+        "Text":  ""
+    },
+    {
+        "Handle":  6425896,
+        "Id":  0,
+        "Class":  "DirectUIHWND",
+        "Text":  ""
+    },
+    {
+        "Handle":  2100618,
+        "Id":  0,
+        "Class":  "SeparatorBand",
+        "Text":  ""
+    }
+]

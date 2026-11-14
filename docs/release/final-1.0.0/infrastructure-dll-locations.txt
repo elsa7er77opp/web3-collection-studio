@@ -1,0 +1,15 @@
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\artifacts\Web3CollectionStudio-Alpha-win-x64\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\artifacts\Web3CollectionStudio-Final-win-x64\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\artifacts\Web3CollectionStudio-win-x64\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\src\Web3CollectionStudio.Desktop\bin\Debug\net10.0\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\src\Web3CollectionStudio.Desktop\bin\Release\net10.0\win-x64\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\src\Web3CollectionStudio.Infrastructure\bin\Debug\net10.0\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\src\Web3CollectionStudio.Infrastructure\bin\Release\net10.0\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\src\Web3CollectionStudio.Infrastructure\obj\Debug\net10.0\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\src\Web3CollectionStudio.Infrastructure\obj\Debug\net10.0\ref\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\src\Web3CollectionStudio.Infrastructure\obj\Debug\net10.0\refint\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\src\Web3CollectionStudio.Infrastructure\obj\Release\net10.0\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\src\Web3CollectionStudio.Infrastructure\obj\Release\net10.0\ref\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\src\Web3CollectionStudio.Infrastructure\obj\Release\net10.0\refint\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\tests\Web3CollectionStudio.Desktop.Tests\bin\Debug\net10.0\Web3CollectionStudio.Infrastructure.dll
+C:\Users\ahmed\Desktop\cyberbank\web3-collection-studio\tests\Web3CollectionStudio.Infrastructure.Tests\bin\Debug\net10.0\Web3CollectionStudio.Infrastructure.dll

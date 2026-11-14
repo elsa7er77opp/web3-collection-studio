@@ -1,0 +1,142 @@
+﻿[
+    {
+        "Name":  "",
+        "AutomationId":  "",
+        "ProcessId":  13976,
+        "Handle":  131312,
+        "Type":  "ControlType.Pane"
+    },
+    {
+        "Name":  "AsusScreenXpertReunion",
+        "AutomationId":  "mainWindow",
+        "ProcessId":  6300,
+        "Handle":  3868630,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "CyberBank Panel",
+        "AutomationId":  "",
+        "ProcessId":  9756,
+        "Handle":  790102,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "كيفية ربط الملفات على لينكس لإكمال المشروع؟ - Manus",
+        "AutomationId":  "",
+        "ProcessId":  21744,
+        "Handle":  198502,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "CyberBank L — DevSecOps Command Center",
+        "AutomationId":  "",
+        "ProcessId":  9056,
+        "Handle":  855654,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "PIONEERS and 10 more pages - Personal - Microsoft​ Edge",
+        "AutomationId":  "",
+        "ProcessId":  7176,
+        "Handle":  66978,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "Snipping Tool",
+        "AutomationId":  "",
+        "ProcessId":  27112,
+        "Handle":  5769368,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "Desktop - File Explorer",
+        "AutomationId":  "",
+        "ProcessId":  13976,
+        "Handle":  12848492,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "This PC - File Explorer",
+        "AutomationId":  "",
+        "ProcessId":  13976,
+        "Handle":  3671234,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "secure-code-shield - File Explorer",
+        "AutomationId":  "",
+        "ProcessId":  13976,
+        "Handle":  723828,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "Authorization error - Manus and 4 more pages - Personal - Microsoft​ Edge",
+        "AutomationId":  "",
+        "ProcessId":  7176,
+        "Handle":  10422706,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "all_cybersecurity_skill_flat - File Explorer",
+        "AutomationId":  "",
+        "ProcessId":  13976,
+        "Handle":  331042,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "all_cybersecurity_skills_dot_skill.zip - File Explorer",
+        "AutomationId":  "",
+        "ProcessId":  13976,
+        "Handle":  197208,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "cybersecurity_skills_separated - File Explorer",
+        "AutomationId":  "",
+        "ProcessId":  13976,
+        "Handle":  396342,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "cybersecurity_skills_separated - File Explorer",
+        "AutomationId":  "",
+        "ProcessId":  13976,
+        "Handle":  3934530,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "trailofbits - File Explorer",
+        "AutomationId":  "",
+        "ProcessId":  13976,
+        "Handle":  854744,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "NVIDIA GeForce Overlay DT",
+        "AutomationId":  "",
+        "ProcessId":  15404,
+        "Handle":  131798,
+        "Type":  "ControlType.Pane"
+    },
+    {
+        "Name":  "NVIDIA GeForce Overlay",
+        "AutomationId":  "",
+        "ProcessId":  15404,
+        "Handle":  131190,
+        "Type":  "ControlType.Pane"
+    },
+    {
+        "Name":  "μTorrent 3.6  (build 47254) [32-bit]",
+        "AutomationId":  "",
+        "ProcessId":  25196,
+        "Handle":  984438,
+        "Type":  "ControlType.Window"
+    },
+    {
+        "Name":  "Program Manager",
+        "AutomationId":  "",
+        "ProcessId":  13976,
+        "Handle":  65836,
+        "Type":  "ControlType.Pane"
+    }
+]

@@ -1,0 +1,302 @@
+﻿[
+    {
+        "Handle":  3018204,
+        "Id":  0,
+        "Class":  "DUIViewWndClassName",
+        "Text":  ""
+    },
+    {
+        "Handle":  1180256,
+        "Id":  0,
+        "Class":  "DirectUIHWND",
+        "Text":  ""
+    },
+    {
+        "Handle":  1248716,
+        "Id":  0,
+        "Class":  "CtrlNotifySink",
+        "Text":  ""
+    },
+    {
+        "Handle":  2361186,
+        "Id":  0,
+        "Class":  "NamespaceTreeControl",
+        "Text":  "Namespace Tree Control"
+    },
+    {
+        "Handle":  8325208,
+        "Id":  0,
+        "Class":  "Static",
+        "Text":  "Namespace Tree Control"
+    },
+    {
+        "Handle":  4132288,
+        "Id":  100,
+        "Class":  "SysTreeView32",
+        "Text":  "Navigation Pane"
+    },
+    {
+        "Handle":  2100104,
+        "Id":  0,
+        "Class":  "CtrlNotifySink",
+        "Text":  ""
+    },
+    {
+        "Handle":  2491600,
+        "Id":  0,
+        "Class":  "Shell Preview Extension Host",
+        "Text":  "Shell Preview Extension Host"
+    },
+    {
+        "Handle":  855182,
+        "Id":  0,
+        "Class":  "CtrlNotifySink",
+        "Text":  ""
+    },
+    {
+        "Handle":  3540140,
+        "Id":  1121,
+        "Class":  "SHELLDLL_DefView",
+        "Text":  "ShellView"
+    },
+    {
+        "Handle":  6032174,
+        "Id":  0,
+        "Class":  "DirectUIHWND",
+        "Text":  ""
+    },
+    {
+        "Handle":  6489882,
+        "Id":  0,
+        "Class":  "CtrlNotifySink",
+        "Text":  ""
+    },
+    {
+        "Handle":  5440188,
+        "Id":  0,
+        "Class":  "ScrollBar",
+        "Text":  ""
+    },
+    {
+        "Handle":  2755758,
+        "Id":  0,
+        "Class":  "CtrlNotifySink",
+        "Text":  ""
+    },
+    {
+        "Handle":  2166232,
+        "Id":  0,
+        "Class":  "ScrollBar",
+        "Text":  ""
+    },
+    {
+        "Handle":  8064044,
+        "Id":  1090,
+        "Class":  "Static",
+        "Text":  "File \u0026name:"
+    },
+    {
+        "Handle":  7342776,
+        "Id":  1148,
+        "Class":  "ComboBoxEx32",
+        "Text":  ""
+    },
+    {
+        "Handle":  5834424,
+        "Id":  1148,
+        "Class":  "ComboBox",
+        "Text":  ""
+    },
+    {
+        "Handle":  5836098,
+        "Id":  1148,
+        "Class":  "Edit",
+        "Text":  ""
+    },
+    {
+        "Handle":  5115062,
+        "Id":  1089,
+        "Class":  "Static",
+        "Text":  "Files of \u0026type:"
+    },
+    {
+        "Handle":  2755650,
+        "Id":  1136,
+        "Class":  "ComboBox",
+        "Text":  ""
+    },
+    {
+        "Handle":  5639204,
+        "Id":  1,
+        "Class":  "Button",
+        "Text":  "\u0026Open"
+    },
+    {
+        "Handle":  6163752,
+        "Id":  2,
+        "Class":  "Button",
+        "Text":  "Cancel"
+    },
+    {
+        "Handle":  3738820,
+        "Id":  -1,
+        "Class":  "ScrollBar",
+        "Text":  ""
+    },
+    {
+        "Handle":  18025056,
+        "Id":  1092,
+        "Class":  "Static",
+        "Text":  ""
+    },
+    {
+        "Handle":  4983836,
+        "Id":  1091,
+        "Class":  "Static",
+        "Text":  ""
+    },
+    {
+        "Handle":  6360420,
+        "Id":  1093,
+        "Class":  "Static",
+        "Text":  ""
+    },
+    {
+        "Handle":  3869980,
+        "Id":  1120,
+        "Class":  "ListBox",
+        "Text":  ""
+    },
+    {
+        "Handle":  6753622,
+        "Id":  1095,
+        "Class":  "Static",
+        "Text":  ""
+    },
+    {
+        "Handle":  5770062,
+        "Id":  1038,
+        "Class":  "Button",
+        "Text":  "\u0026Help"
+    },
+    {
+        "Handle":  8915634,
+        "Id":  0,
+        "Class":  "WorkerW",
+        "Text":  ""
+    },
+    {
+        "Handle":  6229224,
+        "Id":  40965,
+        "Class":  "ReBarWindow32",
+        "Text":  ""
+    },
+    {
+        "Handle":  3738898,
+        "Id":  0,
+        "Class":  "TravelBand",
+        "Text":  ""
+    },
+    {
+        "Handle":  8323770,
+        "Id":  0,
+        "Class":  "ToolbarWindow32",
+        "Text":  "Navigation buttons"
+    },
+    {
+        "Handle":  4525440,
+        "Id":  0,
+        "Class":  "UpBand",
+        "Text":  ""
+    },
+    {
+        "Handle":  8391204,
+        "Id":  0,
+        "Class":  "ToolbarWindow32",
+        "Text":  "Up band"
+    },
+    {
+        "Handle":  7670896,
+        "Id":  41477,
+        "Class":  "Address Band Root",
+        "Text":  ""
+    },
+    {
+        "Handle":  5180722,
+        "Id":  0,
+        "Class":  "msctls_progress32",
+        "Text":  ""
+    },
+    {
+        "Handle":  4787452,
+        "Id":  0,
+        "Class":  "Breadcrumb Parent",
+        "Text":  ""
+    },
+    {
+        "Handle":  3213092,
+        "Id":  1001,
+        "Class":  "ToolbarWindow32",
+        "Text":  "Address: Documents"
+    },
+    {
+        "Handle":  3212602,
+        "Id":  0,
+        "Class":  "ToolbarWindow32",
+        "Text":  "Address band"
+    },
+    {
+        "Handle":  3870048,
+        "Id":  41477,
+        "Class":  "ComboBoxEx32",
+        "Text":  ""
+    },
+    {
+        "Handle":  7079208,
+        "Id":  41477,
+        "Class":  "ComboBox",
+        "Text":  ""
+    },
+    {
+        "Handle":  5572750,
+        "Id":  41477,
+        "Class":  "Edit",
+        "Text":  ""
+    },
+    {
+        "Handle":  855238,
+        "Id":  0,
+        "Class":  "SeparatorBand",
+        "Text":  ""
+    },
+    {
+        "Handle":  2165808,
+        "Id":  0,
+        "Class":  "UniversalSearchBand",
+        "Text":  ""
+    },
+    {
+        "Handle":  3214324,
+        "Id":  0,
+        "Class":  "Search Box",
+        "Text":  ""
+    },
+    {
+        "Handle":  6752874,
+        "Id":  0,
+        "Class":  "SearchEditBoxWrapperClass",
+        "Text":  ""
+    },
+    {
+        "Handle":  2230102,
+        "Id":  0,
+        "Class":  "DirectUIHWND",
+        "Text":  ""
+    },
+    {
+        "Handle":  2034598,
+        "Id":  0,
+        "Class":  "SeparatorBand",
+        "Text":  ""
+    }
+]

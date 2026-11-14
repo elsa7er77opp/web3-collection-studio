@@ -1,0 +1,382 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Web3CollectionStudio.Desktop.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        d:DesignWidth="1600"
+        d:DesignHeight="930"
+        x:Class="Web3CollectionStudio.Desktop.Views.MainWindow"
+        x:DataType="vm:MainViewModel"
+        Title="CyberBank NFT Studio"
+        Icon="/Assets/Brand/collection-studio-app-icon.ico"
+        Width="1600"
+        Height="930"
+        MinWidth="1180"
+        MinHeight="740"
+        WindowStartupLocation="CenterScreen"
+        Background="#080A14"
+        Foreground="#F0EEFF"
+        FontFamily="Segoe UI Variable, Segoe UI">
+
+    <Design.DataContext>
+        <vm:MainViewModel />
+    </Design.DataContext>
+
+    <Window.Styles>
+        <Style Selector="Button">
+            <Setter Property="Background" Value="#12162B" />
+            <Setter Property="BorderBrush" Value="#2B3359" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Foreground" Value="#EDEAFF" />
+            <Setter Property="Padding" Value="10,6" />
+            <Setter Property="FontSize" Value="11" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="CornerRadius" Value="3" />
+        </Style>
+        <Style Selector="Button:pointerover">
+            <Setter Property="Background" Value="#1B2040" />
+            <Setter Property="BorderBrush" Value="#8B5CF6" />
+        </Style>
+        <Style Selector="Button:pressed">
+            <Setter Property="Background" Value="#2B1D56" />
+        </Style>
+        <Style Selector="RadioButton.workspace-nav">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="9,8" />
+            <Setter Property="Foreground" Value="#9BA4C9" />
+        </Style>
+        <Style Selector="RadioButton.workspace-nav:checked">
+            <Setter Property="Background" Value="#211944" />
+            <Setter Property="Foreground" Value="#D8CBFF" />
+        </Style>
+        <Style Selector="RadioButton.workspace-nav:pointerover">
+            <Setter Property="Background" Value="#151A34" />
+        </Style>
+        <Style Selector="RadioButton.mode-tab">
+            <Setter Property="Background" Value="#11162A" />
+            <Setter Property="BorderBrush" Value="#293053" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Padding" Value="6,3" />
+            <Setter Property="Foreground" Value="#8E98BD" />
+        </Style>
+        <Style Selector="RadioButton.mode-tab:checked">
+            <Setter Property="Background" Value="#25194A" />
+            <Setter Property="BorderBrush" Value="#8B5CF6" />
+            <Setter Property="Foreground" Value="#E7E1FF" />
+        </Style>
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="#0A0E1F" />
+            <Setter Property="BorderBrush" Value="#272F51" />
+            <Setter Property="Foreground" Value="#EDEAFF" />
+            <Setter Property="Padding" Value="9,0" />
+            <Setter Property="CornerRadius" Value="3" />
+        </Style>
+    </Window.Styles>
+
+    <Grid RowDefinitions="64,*,28">
+        <!-- Compact command strip -->
+        <Border Grid.Row="0" Background="#0C1020" BorderBrush="#283052" BorderThickness="0,0,0,1">
+            <Grid ColumnDefinitions="262,250,*,Auto" Margin="10,0">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Spacing="9">
+                    <Border Width="48" Height="48" CornerRadius="24" ClipToBounds="True" Background="#0A0B18" BorderBrush="#4C397D" BorderThickness="1">
+                        <Image Source="/Assets/Brand/nft-studio-prismatic-l.png" Stretch="Uniform" />
+                    </Border>
+                    <StackPanel Spacing="0" VerticalAlignment="Center">
+                        <TextBlock Text="CYBERBANK NFT STUDIO" FontSize="12" FontWeight="SemiBold" />
+                        <TextBlock Text="LOCAL DIGITAL COLLECTION WORKSTATION" FontSize="8" LetterSpacing="0.9" Foreground="#8893BA" />
+                    </StackPanel>
+                </StackPanel>
+
+                <Border Grid.Column="1" VerticalAlignment="Center" Height="32" Background="#111631" BorderBrush="#2B3357" BorderThickness="1" CornerRadius="3" Padding="10,0">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Spacing="8">
+                        <Ellipse Width="7" Height="7" Fill="#8B5CF6" />
+                        <TextBlock Text="Collection:" FontSize="10" Foreground="#919BC1" />
+                        <TextBlock Text="{Binding ActiveProjectName}" FontSize="10" FontWeight="SemiBold" />
+                        <TextBlock Text="⌄" Foreground="#7782AA" FontSize="11" />
+                    </StackPanel>
+                </Border>
+
+                <StackPanel Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="1">
+                    <TextBlock Text="LOCAL COLLECTION CONTEXT" FontSize="9" FontWeight="SemiBold" Foreground="#C9C2EE" HorizontalAlignment="Center" />
+                    <TextBlock Text="PNG layers · trait rules · metadata export" FontSize="9" Foreground="#7883AA" HorizontalAlignment="Center" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="3" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                    <TextBlock Text="CyberBank Labs" Foreground="#AFA1FF" FontStyle="Italic" VerticalAlignment="Center" Margin="0,0,8,0" />
+                    <Button Content="Open local project" Click="OpenLocalCollection_Click" />
+                    <Button Content="New collection" Click="NewCollection_Click" Background="#8B5CF6" BorderBrush="#A78BFA" Foreground="White" />
+                    <Button Content="..." Width="34" Padding="0" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Four-column workstation -->
+        <Grid Grid.Row="1" ColumnDefinitions="138,230,*,360">
+            <!-- Global navigation -->
+            <Border Grid.Column="0" Background="#0C1020" BorderBrush="#283052" BorderThickness="0,0,1,0">
+                <Grid RowDefinitions="*,Auto">
+                    <StackPanel Margin="10,14" Spacing="3">
+                        <RadioButton Classes="workspace-nav" GroupName="WorkspaceNavigation" Tag="Dashboard" Click="Navigation_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="9"><TextBlock Text="▣" FontSize="13" Foreground="#A89BDE" /><TextBlock Text="Dashboard" FontSize="10" /></StackPanel>
+                        </RadioButton>
+                        <RadioButton Classes="workspace-nav" GroupName="WorkspaceNavigation" Tag="Collections" IsChecked="True" Click="Navigation_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="9"><TextBlock Text="◈" FontSize="13" Foreground="#BCAEFF" /><TextBlock Text="Collections" FontSize="10" FontWeight="SemiBold" /></StackPanel>
+                        </RadioButton>
+                        <RadioButton Classes="workspace-nav" GroupName="WorkspaceNavigation" Tag="Projects" Click="Navigation_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="9"><TextBlock Text="□" FontSize="13" Foreground="#939ECA" /><TextBlock Text="Projects" FontSize="10" /></StackPanel>
+                        </RadioButton>
+                        <RadioButton Classes="workspace-nav" GroupName="WorkspaceNavigation" Tag="Layers" Click="Navigation_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="9"><TextBlock Text="≋" FontSize="13" Foreground="#939ECA" /><TextBlock Text="Layers" FontSize="10" /></StackPanel>
+                        </RadioButton>
+                        <RadioButton Classes="workspace-nav" GroupName="WorkspaceNavigation" Tag="Assets" Click="Navigation_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="9"><TextBlock Text="◩" FontSize="13" Foreground="#939ECA" /><TextBlock Text="Assets" FontSize="10" /></StackPanel>
+                        </RadioButton>
+                        <RadioButton Classes="workspace-nav" GroupName="WorkspaceNavigation" Tag="Traits" Click="Navigation_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="9"><TextBlock Text="◇" FontSize="13" Foreground="#939ECA" /><TextBlock Text="Traits" FontSize="10" /></StackPanel>
+                        </RadioButton>
+                        <RadioButton Classes="workspace-nav" GroupName="WorkspaceNavigation" Tag="Rules" Click="Navigation_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="9"><TextBlock Text="⌘" FontSize="13" Foreground="#939ECA" /><TextBlock Text="Rules" FontSize="10" /></StackPanel>
+                        </RadioButton>
+                        <RadioButton Classes="workspace-nav" GroupName="WorkspaceNavigation" Tag="Metadata" Click="Navigation_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="9"><TextBlock Text="{}" FontSize="11" Foreground="#939ECA" /><TextBlock Text="Metadata" FontSize="10" /></StackPanel>
+                        </RadioButton>
+                        <RadioButton Classes="workspace-nav" GroupName="WorkspaceNavigation" Tag="Export History" Click="Navigation_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="9"><TextBlock Text="↗" FontSize="13" Foreground="#939ECA" /><TextBlock Text="Exports" FontSize="10" /></StackPanel>
+                        </RadioButton>
+                    </StackPanel>
+
+                    <Border Grid.Row="1" Margin="10" Padding="9" Background="#11162A" BorderBrush="#283256" BorderThickness="1" CornerRadius="3">
+                        <StackPanel Spacing="4">
+                            <TextBlock Text="LOCAL MODE" FontSize="8" FontWeight="Bold" LetterSpacing="0.8" Foreground="#BDAEFF" />
+                            <TextBlock Text="Assets never leave this computer." TextWrapping="Wrap" FontSize="9" Foreground="#8792B8" />
+                            <StackPanel Orientation="Horizontal" Spacing="5"><Ellipse Width="5" Height="5" Fill="#8B5CF6" /><TextBlock Text="Engine online" FontSize="9" Foreground="#B2A8D9" /></StackPanel>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <!-- Collection explorer -->
+            <Border Grid.Column="1" Background="#0A0E1D" BorderBrush="#283052" BorderThickness="0,0,1,0">
+                <Grid RowDefinitions="48,*,Auto">
+                    <Border Grid.Row="0" BorderBrush="#283052" BorderThickness="0,0,0,1" Padding="13,0">
+                        <Grid ColumnDefinitions="*,Auto" VerticalAlignment="Center">
+                            <TextBlock Text="COLLECTION EXPLORER" FontSize="10" FontWeight="Bold" />
+                            <TextBlock Grid.Column="1" Text="×" Foreground="#747FA7" />
+                        </Grid>
+                    </Border>
+
+                    <StackPanel Grid.Row="1" Margin="13,14" Spacing="10">
+                        <StackPanel Orientation="Horizontal" Spacing="7">
+                            <Ellipse Width="7" Height="7" Fill="#8B5CF6" />
+                            <TextBlock Text="{Binding ActiveProjectName}" FontSize="11" FontWeight="SemiBold" />
+                        </StackPanel>
+                        <TextBlock Text="Create a local collection to assemble ordered PNG layers, trait distributions, and compatibility rules." TextWrapping="Wrap" FontSize="10" Foreground="#8994B9" Margin="14,0,0,4" />
+                        <Border Height="1" Background="#222A4A" />
+                        <TextBlock Text="COLLECTION LEDGER" FontSize="9" FontWeight="Bold" Foreground="#717CA5" Margin="0,4,0,0" />
+                        <Border Padding="9" Background="#10152A" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3">
+                            <StackPanel Spacing="6">
+                                <Grid ColumnDefinitions="auto,*"><TextBlock Text="◌" Foreground="#8B5CF6" /><TextBlock Grid.Column="1" Text="{Binding ActiveProfileLabel}" FontSize="10" Margin="7,0,0,0" /></Grid>
+                                <Grid ColumnDefinitions="auto,*"><TextBlock Text="≋" Foreground="#7F8AB4" /><TextBlock Grid.Column="1" Text="{Binding ActiveLayerCount, StringFormat=Layers: {0}}" FontSize="10" Foreground="#A2ABC9" Margin="7,0,0,0" /></Grid>
+                                <Grid ColumnDefinitions="auto,*"><TextBlock Text="◩" Foreground="#7F8AB4" /><TextBlock Grid.Column="1" Text="Assets remain local" FontSize="10" Foreground="#A2ABC9" Margin="7,0,0,0" /></Grid>
+                            </StackPanel>
+                        </Border>
+                        <Grid ColumnDefinitions="*,Auto" Margin="0,2,0,0">
+                            <TextBlock Text="LOCAL LAYERS" FontSize="9" FontWeight="Bold" Foreground="#717CA5" VerticalAlignment="Center" />
+                            <Button Grid.Column="1" Content="+ Layer" Click="AddLayer_Click" IsEnabled="{Binding HasActiveProject}" Padding="7,3" FontSize="9" />
+                        </Grid>
+                        <Border Padding="5" Background="#0D1122" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3">
+                            <ItemsControl ItemsSource="{Binding LocalLayers}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Button Tag="{Binding Name}" Click="LayerSelection_Click" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Margin="0,2" Padding="7,5">
+                                            <Grid ColumnDefinitions="Auto,*,Auto">
+                                                <TextBlock Text="≋" Foreground="#A78BFA" FontSize="10" />
+                                                <TextBlock Grid.Column="1" Text="{Binding Name}" Margin="7,0,0,0" FontSize="10" TextTrimming="CharacterEllipsis" />
+                                                <TextBlock Grid.Column="2" Text="{Binding TraitCount}" Foreground="#8D98BE" FontSize="9" />
+                                            </Grid>
+                                        </Button>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </Border>
+                        <TextBlock Text="WORKFLOW" FontSize="9" FontWeight="Bold" Foreground="#717CA5" Margin="0,3,0,0" />
+                        <TextBlock Text="1. Create collection" FontSize="10" Foreground="#C8C2E7" />
+                        <TextBlock Text="2. Add ordered PNG layers" FontSize="10" Foreground="#8F99BD" />
+                        <TextBlock Text="3. Run preflight locally" FontSize="10" Foreground="#8F99BD" />
+                        <TextBlock Text="4. Render and export" FontSize="10" Foreground="#8F99BD" />
+                    </StackPanel>
+
+                    <Border Grid.Row="2" Margin="12" Padding="10" Background="#12142D" BorderBrush="#3B3565" BorderThickness="1" CornerRadius="3">
+                        <StackPanel Spacing="3">
+                            <TextBlock Text="PROJECT ROOT" FontSize="8" FontWeight="Bold" Foreground="#A99BE0" />
+                            <TextBlock Text="Selected only through a local folder action." TextWrapping="Wrap" FontSize="9" Foreground="#969EBC" />
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <!-- Main creative workspace -->
+            <Grid Grid.Column="2" RowDefinitions="94,76,*,184" Background="#080A14">
+                <Grid Grid.Row="0" ColumnDefinitions="*,*,*,*" Margin="12,12,8,8">
+                    <Border Grid.Column="0" Margin="0,0,7,0" Background="#0F1327" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3" Padding="12">
+                        <StackPanel Spacing="4"><TextBlock Text="◌  PROFILE" Foreground="#BCAEFF" FontSize="9" FontWeight="Bold" /><TextBlock Text="{Binding ActiveProfileLabel}" FontSize="18" FontWeight="SemiBold" /><TextBlock Text="{Binding WorkspaceReadinessLabel}" FontSize="9" Foreground="#7E89AE" /></StackPanel>
+                    </Border>
+                    <Border Grid.Column="1" Margin="0,0,7,0" Background="#0F1327" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3" Padding="12">
+                        <StackPanel Spacing="4"><TextBlock Text="≋  LAYERS" Foreground="#A78BFA" FontSize="9" FontWeight="Bold" /><TextBlock Text="{Binding ActiveLayerCount}" FontSize="22" FontWeight="SemiBold" /><TextBlock Text="Local ordered stack" FontSize="9" Foreground="#7E89AE" /></StackPanel>
+                    </Border>
+                    <Border Grid.Column="2" Margin="0,0,7,0" Background="#0F1327" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3" Padding="12">
+                        <StackPanel Spacing="4"><TextBlock Text="◇  UNIQUE OUTPUTS" Foreground="#8DB9FF" FontSize="9" FontWeight="Bold" /><TextBlock Text="—" FontSize="22" FontWeight="SemiBold" /><TextBlock Text="Calculated in preflight" FontSize="9" Foreground="#7E89AE" /></StackPanel>
+                    </Border>
+                    <Border Grid.Column="3" Background="#0F1327" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3" Padding="12">
+                        <StackPanel Spacing="4"><TextBlock Text="●  PREFLIGHT" Foreground="#C9A7FF" FontSize="9" FontWeight="Bold" /><TextBlock Text="{Binding PreflightStatusLabel}" FontSize="15" FontWeight="SemiBold" /><TextBlock Text="{Binding PreflightSummary}" TextTrimming="CharacterEllipsis" FontSize="9" Foreground="#7E89AE" /></StackPanel>
+                    </Border>
+                </Grid>
+
+                <Border Grid.Row="1" Margin="12,0,8,8" Background="#0D1123" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3" Padding="12,8">
+                    <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto">
+                        <TextBlock Text="{Binding SelectedSection}" FontSize="11" FontWeight="Bold" />
+                        <TextBlock Grid.Column="1" Text="×" Foreground="#747FA7" />
+                        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal" Spacing="7" Margin="0,8,0,0">
+                            <RadioButton Classes="mode-tab" GroupName="WorkspaceMode" Tag="Canvas" Content="Canvas" IsChecked="True" Click="WorkspaceMode_Click" />
+                            <RadioButton Classes="mode-tab" GroupName="WorkspaceMode" Tag="Gallery" Content="Gallery" Click="WorkspaceMode_Click" />
+                            <RadioButton Classes="mode-tab" GroupName="WorkspaceMode" Tag="Compare" Content="Compare" Click="WorkspaceMode_Click" />
+                            <Border Width="1" Height="22" Background="#283052" Margin="7,0" />
+                            <TextBox Width="195" Height="26" PlaceholderText="Filter local assets..." />
+                            <Button Content="All traits  ⌄" Height="26" />
+                            <Button Content="Run preflight" Height="26" IsEnabled="{Binding CanRunPreflight}" Click="RunPreflight_Click" ToolTip.Tip="A local collection is required before preflight." />
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="2" Margin="12,0,8,8" Background="#0A0D1C" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3" IsVisible="{Binding IsCanvasMode}">
+                    <Grid RowDefinitions="34,*">
+                        <Border Grid.Row="0" Background="#11162A" BorderBrush="#252E50" BorderThickness="0,0,0,1" Padding="12,0">
+                            <Grid ColumnDefinitions="90,*,112,104,92" VerticalAlignment="Center">
+                                <TextBlock Text="CANVAS" FontSize="9" FontWeight="Bold" Foreground="#919CC0" />
+                                <TextBlock Grid.Column="1" Text="LOCAL ASSET PREVIEW" FontSize="9" FontWeight="Bold" Foreground="#919CC0" />
+                                <TextBlock Grid.Column="2" Text="PROFILE" FontSize="9" FontWeight="Bold" Foreground="#919CC0" />
+                                <TextBlock Grid.Column="3" Text="DIMENSIONS" FontSize="9" FontWeight="Bold" Foreground="#919CC0" />
+                                <TextBlock Grid.Column="4" Text="STATE" FontSize="9" FontWeight="Bold" Foreground="#919CC0" />
+                            </Grid>
+                        </Border>
+                        <Grid Grid.Row="1" ColumnDefinitions="44,*,210" Background="#090C19">
+                            <Border Background="#0D1122" BorderBrush="#202846" BorderThickness="0,0,1,0">
+                                <TextBlock Text="1&#xA;2&#xA;3&#xA;4&#xA;5&#xA;6&#xA;7&#xA;8" TextAlignment="Right" Margin="0,15,9,0" FontFamily="Cascadia Mono, Consolas" FontSize="10" Foreground="#4E587B" />
+                            </Border>
+                            <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="360" Spacing="9">
+                                <Border Width="58" Height="58" Background="#161334" BorderBrush="#4B3B7C" BorderThickness="1" CornerRadius="29" HorizontalAlignment="Center">
+                                    <TextBlock Text="◈" Foreground="#A78BFA" FontSize="21" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <TextBlock Text="{Binding ActiveProjectName}" FontSize="15" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                <TextBlock Text="Create a PFP, Badge/Gaming, or Digital Art collection. The canvas previews layers locally and stays separate from final rendering." TextWrapping="Wrap" TextAlignment="Center" Foreground="#808AAF" FontSize="10" />
+                                <Button Content="Create local collection" Click="NewCollection_Click" HorizontalAlignment="Center" Margin="0,4,0,0" />
+                            </StackPanel>
+                            <Border Grid.Column="2" Background="#0D1122" BorderBrush="#202846" BorderThickness="1,0,0,0" Padding="14">
+                                <StackPanel Spacing="10">
+                                    <TextBlock Text="CANVAS CONTEXT" FontSize="9" FontWeight="Bold" Foreground="#8D98BE" />
+                                    <TextBlock Text="{Binding ActiveCanvasSummary}" FontSize="11" FontWeight="SemiBold" />
+                                    <TextBlock Text="{Binding WorkspaceReadinessLabel}" TextWrapping="Wrap" FontSize="10" Foreground="#808AAF" />
+                                    <Border Height="1" Background="#252E50" />
+                                    <TextBlock Text="DISPLAY POLICY" FontSize="9" FontWeight="Bold" Foreground="#6F7AA0" />
+                                    <TextBlock Text="No wallet data, minting controls, uploads, prices, or marketplace actions belong in this workspace." TextWrapping="Wrap" FontSize="10" Foreground="#A7AFCB" />
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="2" Margin="12,0,8,8" Background="#0A0D1C" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3" IsVisible="{Binding IsGalleryMode}">
+                    <Grid RowDefinitions="38,*">
+                        <Border Background="#11162A" BorderBrush="#252E50" BorderThickness="0,0,0,1" Padding="12,0"><StackPanel Orientation="Horizontal" VerticalAlignment="Center" Spacing="8"><TextBlock Text="GALLERY" FontSize="9" FontWeight="Bold" Foreground="#919CC0" /><TextBlock Text="Local PNG traits only" FontSize="9" Foreground="#7580A8" /></StackPanel></Border>
+                        <ScrollViewer Grid.Row="1" Margin="14">
+                            <ItemsControl ItemsSource="{Binding LocalAssetGallery}">
+                                <ItemsControl.ItemsPanel><ItemsPanelTemplate><WrapPanel /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border Width="178" Margin="0,0,12,12" Padding="9" Background="#10152A" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3">
+                                            <StackPanel Spacing="7">
+                                                <Border Height="116" Background="#080B18" CornerRadius="2" ClipToBounds="True"><Image Source="{Binding AssetUri}" Stretch="Uniform" /></Border>
+                                                <TextBlock Text="{Binding TraitName}" FontSize="10" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" />
+                                                <TextBlock Text="{Binding LayerName}" FontSize="9" Foreground="#909ABD" TextTrimming="CharacterEllipsis" />
+                                                <Grid ColumnDefinitions="*,Auto"><TextBlock Text="Local PNG" FontSize="8" Foreground="#7E89AD" /><TextBlock Grid.Column="1" Text="{Binding Weight}" FontSize="8" Foreground="#BCAEFF" /></Grid>
+                                                <Button Tag="{Binding RelativeAssetPath}" Content="Add to compare" Click="AssetCompare_Click" Padding="7,3" FontSize="9" />
+                                            </StackPanel>
+                                        </Border>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </ScrollViewer>
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="2" Margin="12,0,8,8" Background="#0A0D1C" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3" IsVisible="{Binding IsCompareMode}">
+                    <Grid RowDefinitions="38,*,Auto">
+                        <Border Background="#11162A" BorderBrush="#252E50" BorderThickness="0,0,0,1" Padding="12,0"><StackPanel Orientation="Horizontal" VerticalAlignment="Center" Spacing="8"><TextBlock Text="COMPARE" FontSize="9" FontWeight="Bold" Foreground="#919CC0" /><TextBlock Text="Select up to two local traits from Gallery" FontSize="9" Foreground="#7580A8" /></StackPanel></Border>
+                        <Grid Grid.Row="1" ColumnDefinitions="*,*" Margin="14">
+                            <Border Margin="0,0,7,0" Padding="12" Background="#10152A" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3"><StackPanel Spacing="8"><TextBlock Text="A" FontSize="9" FontWeight="Bold" Foreground="#BCAEFF" /><Border Height="210" Background="#080B18" CornerRadius="2" ClipToBounds="True"><Image Source="{Binding CompareLeftAssetUri}" Stretch="Uniform" /></Border><TextBlock Text="{Binding CompareLeftLabel}" FontSize="11" FontWeight="SemiBold" /></StackPanel></Border>
+                            <Border Grid.Column="1" Margin="7,0,0,0" Padding="12" Background="#10152A" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3"><StackPanel Spacing="8"><TextBlock Text="B" FontSize="9" FontWeight="Bold" Foreground="#8DB9FF" /><Border Height="210" Background="#080B18" CornerRadius="2" ClipToBounds="True"><Image Source="{Binding CompareRightAssetUri}" Stretch="Uniform" /></Border><TextBlock Text="{Binding CompareRightLabel}" FontSize="11" FontWeight="SemiBold" /></StackPanel></Border>
+                        </Grid>
+                        <StackPanel Grid.Row="2" Margin="14,0,14,14" Orientation="Horizontal" Spacing="8">
+                            <TextBlock Text="Compare is local-only and shows source traits; it does not generate or overwrite collection outputs." FontSize="9" Foreground="#8490B4" VerticalAlignment="Center" />
+                            <Button Content="Require A → B" Click="AddRequireRule_Click" IsEnabled="{Binding HasActiveProject}" Padding="7,3" FontSize="9" />
+                            <Button Content="Exclude A × B" Click="AddExcludeRule_Click" IsEnabled="{Binding HasActiveProject}" Padding="7,3" FontSize="9" />
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <Grid Grid.Row="3" ColumnDefinitions="*,*" Margin="12,0,8,12">
+                    <Border Grid.Column="0" Margin="0,0,7,0" Background="#0D1123" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3" Padding="12">
+                        <Grid RowDefinitions="Auto,*">
+                            <Grid ColumnDefinitions="*,Auto"><TextBlock Text="TRAIT DISTRIBUTION" FontSize="10" FontWeight="Bold" /><TextBlock Grid.Column="1" Text="View rarity map" Foreground="#A78BFA" FontSize="9" FontWeight="SemiBold" /></Grid>
+                            <StackPanel Grid.Row="1" Margin="2,13,0,0" Spacing="10">
+                                <StackPanel Orientation="Horizontal" Spacing="9"><Ellipse Width="7" Height="7" Fill="#8B5CF6" /><TextBlock Text="Waiting for local layer inventory" FontSize="10" /><TextBlock Text="—" Foreground="#717CA1" FontSize="10" /></StackPanel>
+                                <StackPanel Orientation="Horizontal" Spacing="9"><Ellipse Width="7" Height="7" Fill="#414B70" /><TextBlock Text="Read trait weights" FontSize="10" Foreground="#8791B6" /></StackPanel>
+                                <StackPanel Orientation="Horizontal" Spacing="9"><Ellipse Width="7" Height="7" Fill="#414B70" /><TextBlock Text="Evaluate compatibility rules" FontSize="10" Foreground="#8791B6" /></StackPanel>
+                                <StackPanel Orientation="Horizontal" Spacing="9"><Ellipse Width="7" Height="7" Fill="#414B70" /><TextBlock Text="Reserve unique fingerprints" FontSize="10" Foreground="#8791B6" /></StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Column="1" Background="#0D1123" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3" Padding="12">
+                        <Grid RowDefinitions="Auto,*,Auto">
+                            <Grid ColumnDefinitions="*,Auto"><TextBlock Text="GENERATION QUEUE" FontSize="10" FontWeight="Bold" /><TextBlock Grid.Column="1" Text="Queue settings" Foreground="#A78BFA" FontSize="9" FontWeight="SemiBold" /></Grid>
+                            <Grid Grid.Row="1" ColumnDefinitions="112,*" VerticalAlignment="Center">
+                                <Border Width="82" Height="82" BorderBrush="#343E63" BorderThickness="7" CornerRadius="41" HorizontalAlignment="Center"><StackPanel VerticalAlignment="Center"><TextBlock Text="{Binding RenderQueueStatusLabel}" TextWrapping="Wrap" TextAlignment="Center" FontSize="10" FontWeight="Bold" HorizontalAlignment="Center" /><TextBlock Text="Local queue" FontSize="8" Foreground="#858FB0" HorizontalAlignment="Center" /></StackPanel></Border>
+                                <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="5"><TextBlock Text="{Binding RenderQueueDetailLabel}" Foreground="#BCAEFF" FontSize="10" /><TextBlock Text="Bounded worker: 1" Foreground="#8DB9FF" FontSize="10" /><TextBlock Text="{Binding CancellationAvailabilityLabel}" Foreground="#B6C3E9" FontSize="10" /><TextBlock Text="No remote jobs" Foreground="#CE9BFF" FontSize="10" /></StackPanel>
+                            </Grid>
+                            <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="9"><Button Content="Render one local PNG" Click="RenderOneLocalPng_Click" IsEnabled="{Binding HasActiveProject}" Padding="7,3" FontSize="9" /><Button Content="Cancel local render" Click="CancelLocalRender_Click" IsEnabled="{Binding CanCancelLocalRender}" Padding="7,3" FontSize="9" /><TextBlock Text="Bounded worker 1 · cancel only while rendering" FontSize="9" Foreground="#838EAF" VerticalAlignment="Center" /></StackPanel>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Grid>
+
+            <!-- Deep collection inspector -->
+            <Border Grid.Column="3" Background="#0B0F20" BorderBrush="#283052" BorderThickness="1,0,0,0">
+                <Grid RowDefinitions="48,32,*,38,*,Auto">
+                    <Border Grid.Row="0" BorderBrush="#283052" BorderThickness="0,0,0,1" Padding="14,0"><Grid ColumnDefinitions="*,Auto" VerticalAlignment="Center"><TextBlock Text="COLLECTION INSPECTOR" FontSize="10" FontWeight="Bold" /><TextBlock Grid.Column="1" Text="×" Foreground="#747FA7" /></Grid></Border>
+                    <Border Grid.Row="1" Background="#11162A" BorderBrush="#252E50" BorderThickness="0,0,0,1" Padding="12,0"><StackPanel Orientation="Horizontal" VerticalAlignment="Center" Spacing="8"><TextBlock Text="≋" Foreground="#A78BFA" FontSize="11" FontWeight="Bold" /><TextBlock Text="{Binding SelectedLayerName}" FontSize="10" Foreground="#AAB4D2" /><TextBlock Text="{Binding SelectedLayerTraitCount}" Foreground="#747FA7" FontSize="10" /></StackPanel></Border>
+                    <Grid Grid.Row="2" Background="#090C19" RowDefinitions="Auto,*,Auto" Margin="14">
+                        <StackPanel Spacing="5"><TextBlock Text="LAYER &amp; TRAIT DETAILS" FontSize="9" FontWeight="Bold" Foreground="#7782A7" /><TextBlock Text="{Binding SelectedLayerName}" FontSize="14" FontWeight="SemiBold" /><TextBlock Text="{Binding SelectedLayerSummary}" TextWrapping="Wrap" FontSize="10" Foreground="#8994B9" /></StackPanel>
+                        <Border Grid.Row="1" Margin="0,15,0,12" Padding="12" Background="#10152A" BorderBrush="#252E50" BorderThickness="1" CornerRadius="3"><StackPanel Spacing="7"><TextBlock Text="LOCAL PNG ASSETS" FontSize="9" FontWeight="Bold" Foreground="#A79CE2" /><TextBlock Text="Select a PNG file. Collection Studio copies it into this project, stores only a relative path, and keeps the original untouched." TextWrapping="Wrap" FontSize="10" Foreground="#A7AFC9" /><Button Content="Import PNG trait" Click="ImportPngTrait_Click" IsEnabled="{Binding HasActiveProject}" HorizontalAlignment="Left" Margin="0,3,0,2" /><Border Height="1" Background="#252E50" /><TextBlock Text="COMPARE A WEIGHT" FontSize="9" FontWeight="Bold" Foreground="#A79CE2" /><TextBox x:Name="TraitWeightTextBox" Width="110" Height="26" Text="100" PlaceholderText="0+" /><Button Content="Save trait weight" Click="SaveTraitWeight_Click" IsEnabled="{Binding HasActiveProject}" HorizontalAlignment="Left" Padding="7,3" FontSize="9" /><TextBlock Text="Choose a local trait with Add to compare, then save its non-negative local weight. Rules are added from Compare A and B." TextWrapping="Wrap" FontSize="9" Foreground="#7E89AD" /><Border Height="1" Background="#252E50" /><TextBlock Text="PNG paths are relative to the selected collection root. Absolute paths and files outside the project are rejected." TextWrapping="Wrap" FontSize="9" Foreground="#7E89AD" /></StackPanel></Border>
+                        <Border Grid.Row="2" Padding="10" Background="#171534" BorderBrush="#40366B" BorderThickness="1" CornerRadius="3"><StackPanel Orientation="Horizontal" Spacing="7"><Ellipse Width="6" Height="6" Fill="#8B5CF6" /><TextBlock Text="{Binding PreflightSummary}" TextTrimming="CharacterEllipsis" FontSize="10" Foreground="#C6BBF4" /></StackPanel></Border>
+                    </Grid>
+                    <Border Grid.Row="3" Background="#11162A" BorderBrush="#252E50" BorderThickness="0,1,0,1" Padding="12,0"><StackPanel Orientation="Horizontal" VerticalAlignment="Center" Spacing="24"><TextBlock Text="METADATA" Foreground="#BCAEFF" FontSize="9" FontWeight="Bold" /><TextBlock Text="RULES" Foreground="#8B96B7" FontSize="9" FontWeight="Bold" /><TextBlock Text="EXPORT" Foreground="#8B96B7" FontSize="9" FontWeight="Bold" /></StackPanel></Border>
+                    <StackPanel Grid.Row="4" Margin="14" Spacing="10"><TextBlock Text="Metadata preview" FontSize="14" FontWeight="SemiBold" /><TextBlock Text="Open a collection and select traits to inspect the local OpenSea-style JSON preview. Final image references remain relative paths." TextWrapping="Wrap" FontSize="10" Foreground="#8994B9" /><Button Content="Export local metadata" Click="ExportLocalMetadata_Click" IsEnabled="{Binding HasActiveProject}" HorizontalAlignment="Left" Padding="7,3" FontSize="9" /><Border Height="1" Background="#252E50" /><TextBlock Text="EXPORT BOUNDARY" FontSize="9" FontWeight="Bold" Foreground="#7782A7" /><TextBlock Text="Export writes local PNG and JSON files only. No wallet, IPFS, minting, cloud sync, or marketplace operation is available." TextWrapping="Wrap" FontSize="10" Foreground="#B0B8D2" /></StackPanel>
+                    <Border Grid.Row="5" Margin="12" Padding="9" Background="#11182E" BorderBrush="#2E3B60" BorderThickness="1" CornerRadius="3"><StackPanel Orientation="Horizontal" Spacing="7"><Ellipse Width="6" Height="6" Fill="#8B5CF6" /><TextBlock Text="Local project isolation active" FontSize="10" Foreground="#C4BAEB" /></StackPanel></Border>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <!-- Persistent status strip -->
+        <Border Grid.Row="2" Background="#0B0F1D" BorderBrush="#283052" BorderThickness="0,1,0,0" Padding="14,0">
+            <Grid ColumnDefinitions="Auto,Auto,Auto,*,Auto" VerticalAlignment="Center">
+                <TextBlock Text="◉  Engine: local" FontSize="9" Foreground="#AAB4D0" />
+                <TextBlock Grid.Column="1" Text="◉  Rules: —" FontSize="9" Foreground="#AAB4D0" Margin="20,0,0,0" />
+                <TextBlock Grid.Column="2" Text="{Binding RenderQueueStatusLabel}" FontSize="9" Foreground="#AAB4D0" Margin="20,0,0,0" />
+                <TextBlock Grid.Column="3" Text="{Binding LocalCollectionOpenFeedback}" TextTrimming="CharacterEllipsis" FontSize="9" Foreground="#AAB4D0" Margin="20,0,12,0" />
+                <StackPanel Grid.Column="4" Orientation="Horizontal" Spacing="6"><Ellipse Width="6" Height="6" Fill="#8B5CF6" /><TextBlock Text="LOCAL STORAGE ONLY" FontSize="9" Foreground="#C3B8EA" /></StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

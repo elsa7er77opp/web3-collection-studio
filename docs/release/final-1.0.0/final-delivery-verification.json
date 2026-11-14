@@ -1,0 +1,10 @@
+﻿{
+    "ReportInDelivery":  true,
+    "DecisionVerifiedFinal":  true,
+    "Regression7676Recorded":  true,
+    "PanelLaunchDispatched":  true,
+    "InstalledLoginEvidence":  true,
+    "InstalledWorkstationEvidence":  true,
+    "InstallerSha256":  "67145663CCC7046A423E3F22D7BB65B7F1B2DE54B457B4BBDC105A370ABAF1A1",
+    "InstallerSha256Matches":  true
+}

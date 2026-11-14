@@ -1,0 +1,8 @@
+﻿
+FullName                                                                                                                                                  Length LastWriteTime        
+--------                                                                                                                                                  ------ -------------        
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\.collection-studio\project.json         44 8/25/2026 12:25:46 PM
+C:\Users\ahmed\AppData\Local\CyberBank\Web3CollectionStudio\Collections\Final PFP QA-9cfd9fa9e3d84178be43a896ae4842c8\.collection-studio\project.json.bak    689 8/25/2026 12:12:09 PM
+
+
+

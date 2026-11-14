@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Web3CollectionStudio.Application/Web3CollectionStudio.Application.csproj" />
+    <Project Path="src/Web3CollectionStudio.Contracts/Web3CollectionStudio.Contracts.csproj" />
+    <Project Path="src/Web3CollectionStudio.Desktop/Web3CollectionStudio.Desktop.csproj" />
+    <Project Path="src/Web3CollectionStudio.Domain/Web3CollectionStudio.Domain.csproj" />
+    <Project Path="src/Web3CollectionStudio.Infrastructure/Web3CollectionStudio.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Web3CollectionStudio.Application.Tests/Web3CollectionStudio.Application.Tests.csproj" />
+    <Project Path="tests/Web3CollectionStudio.Desktop.Tests/Web3CollectionStudio.Desktop.Tests.csproj" />
+    <Project Path="tests/Web3CollectionStudio.Domain.Tests/Web3CollectionStudio.Domain.Tests.csproj" />
+    <Project Path="tests/Web3CollectionStudio.Infrastructure.Tests/Web3CollectionStudio.Infrastructure.Tests.csproj" />
+  </Folder>
+</Solution>

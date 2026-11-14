@@ -1,0 +1,9 @@
+﻿{
+    "AppId":  "web3-collection-studio",
+    "DisplayName":  "CyberBank NFT Studio",
+    "Version":  "1.0.0",
+    "ExecutableExists":  true,
+    "IconExists":  true,
+    "RegistryPath":  "C:\\Users\\ahmed\\AppData\\Local\\CyberBank\\Panel\\registry.json",
+    "RegistrationMethod":  "Manifest-derived registry entry for Panel host launch validation; pre-existing registry backed up."
+}

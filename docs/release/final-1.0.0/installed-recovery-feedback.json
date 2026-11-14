@@ -1,0 +1,22 @@
+﻿[
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Final PFP QA"
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Local project isolation active"
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Open a collection and select traits to inspect the local OpenSea-style JSON preview. Final image references remain relative paths."
+    },
+    {
+        "Type":  "ControlType.Button",
+        "Text":  "Open local project"
+    },
+    {
+        "Type":  "ControlType.Text",
+        "Text":  "Primary project manifest could not be read. Project restored from local backup."
+    }
+]

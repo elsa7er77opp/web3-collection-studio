@@ -1,0 +1,4 @@
+CyberBank-Panel-Alpha-win-x64.zip
+CyberBankPanel-win-x64
+installer
+CyberBankPanel.iss

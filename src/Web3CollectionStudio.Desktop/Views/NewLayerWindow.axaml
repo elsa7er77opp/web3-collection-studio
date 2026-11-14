@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Web3CollectionStudio.Desktop.Views.NewLayerWindow"
+        Title="Add local layer"
+        Width="430"
+        Height="235"
+        CanResize="False"
+        WindowStartupLocation="CenterOwner"
+        Background="#0C1020"
+        Foreground="#F0EEFF">
+    <Grid RowDefinitions="*,Auto" Margin="22">
+        <StackPanel Spacing="10">
+            <TextBlock Text="ADD LOCAL LAYER" FontSize="16" FontWeight="SemiBold" />
+            <TextBlock Text="Layers are drawn in the order they are added. Source files and traits remain inside this collection project." TextWrapping="Wrap" FontSize="11" Foreground="#A3ACCA" />
+            <TextBlock Text="LAYER NAME" FontSize="9" FontWeight="Bold" Foreground="#BCAEFF" />
+            <TextBox x:Name="LayerNameBox" PlaceholderText="e.g. Background, Body, Accessories" />
+            <TextBlock x:Name="StatusText" FontSize="10" Foreground="#E3ADFF" />
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8">
+            <Button Content="Cancel" Click="Cancel_Click" />
+            <Button Content="Add layer" Background="#8B5CF6" BorderBrush="#A78BFA" Foreground="White" Click="Add_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

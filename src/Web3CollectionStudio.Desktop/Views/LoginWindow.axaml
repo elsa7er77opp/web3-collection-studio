@@ -1,0 +1,57 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Web3CollectionStudio.Desktop.ViewModels"
+        x:Class="Web3CollectionStudio.Desktop.Views.LoginWindow"
+        x:DataType="vm:LoginViewModel"
+        Title="CyberBank NFT Studio — Local Sign In"
+        Width="940"
+        Height="610"
+        CanResize="False"
+        WindowStartupLocation="CenterScreen"
+        Background="#070914">
+    <Grid ColumnDefinitions="1.05*,0.95*">
+        <Border Background="#0A0C1E" Padding="52">
+            <Grid RowDefinitions="auto,*,auto">
+                <StackPanel Orientation="Horizontal" Spacing="12">
+                    <Border Width="54" Height="54" CornerRadius="27" ClipToBounds="True" Background="#1C1543" BorderBrush="#5B3FA5" BorderThickness="1">
+                        <Image Source="/Assets/Brand/nft-studio-prismatic-l.png" Stretch="Uniform" />
+                    </Border>
+                    <StackPanel Spacing="1" VerticalAlignment="Center">
+                        <TextBlock Text="CYBERBANK" FontSize="11" FontWeight="Bold" LetterSpacing="1.6" Foreground="#C4B5FD" />
+                        <TextBlock Text="NFT COLLECTION STUDIO" FontSize="10" LetterSpacing="0.9" Foreground="#7F89B3" />
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Grid.Row="1" VerticalAlignment="Center" Spacing="11" Margin="0,0,35,12">
+                    <Border Width="176" Height="176" HorizontalAlignment="Left" ClipToBounds="True" Background="#090B18" BorderBrush="#3E316E" BorderThickness="1" CornerRadius="88" Margin="0,0,0,4">
+                        <Image Source="/Assets/Brand/nft-studio-prismatic-l.png" Stretch="Uniform" />
+                    </Border>
+                    <TextBlock x:Name="ModeTitle" Text="NFT STUDIO ACCESS" FontSize="25" FontWeight="SemiBold" TextWrapping="Wrap" MaxWidth="330" />
+                    <TextBlock Text="Your collection projects, source assets, render queue, and metadata remain local to this Windows profile." TextWrapping="Wrap" FontSize="13" LineHeight="19" Foreground="#A2ABCA" />
+                    <Border Padding="12" Background="#111530" BorderBrush="#292E52" BorderThickness="1" CornerRadius="8" Margin="0,6,0,0">
+                        <StackPanel Spacing="4">
+                            <TextBlock Text="LOCAL SECURITY" FontSize="10" FontWeight="Bold" LetterSpacing="1.1" Foreground="#C4B5FD" />
+                            <TextBlock Text="Passwords are never retained in plaintext. Local sign-in uses protected password verification and temporary lockout after repeated failures." TextWrapping="Wrap" FontSize="11" LineHeight="17" Foreground="#8993B8" />
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <TextBlock Grid.Row="2" Text="No wallet · No seed phrase · No minting · No cloud upload" FontSize="11" Foreground="#737DA4" Margin="0,8,0,0" />
+            </Grid>
+        </Border>
+        <Border Grid.Column="1" Background="#0D1023" Padding="52">
+            <StackPanel VerticalAlignment="Center" Spacing="12">
+                <TextBlock x:Name="FormTitle" Text="SIGN IN LOCALLY" FontSize="22" FontWeight="SemiBold" />
+                <TextBlock x:Name="FormCaption" Text="Unlock the local workspace." FontSize="13" Foreground="#929CBC" Margin="0,0,0,12" />
+                <TextBlock Text="USERNAME" FontSize="10" FontWeight="Bold" LetterSpacing="1.1" Foreground="#A39BCD" />
+                <TextBox x:Name="UsernameBox" PlaceholderText="Local username" />
+                <TextBlock Text="PASSWORD" FontSize="10" FontWeight="Bold" LetterSpacing="1.1" Foreground="#A39BCD" Margin="0,6,0,0" />
+                <TextBox x:Name="PasswordBox" PasswordChar="•" PlaceholderText="Password" />
+                <StackPanel x:Name="ConfirmationPanel" Spacing="8">
+                    <TextBlock Text="CONFIRM PASSWORD" FontSize="10" FontWeight="Bold" LetterSpacing="1.1" Foreground="#A39BCD" Margin="0,6,0,0" />
+                    <TextBox x:Name="PasswordConfirmationBox" PasswordChar="•" PlaceholderText="Confirm password" />
+                </StackPanel>
+                <TextBlock x:Name="StatusText" Text="{Binding StatusMessage}" TextWrapping="Wrap" FontSize="11" Foreground="#9BA6CB" Margin="0,6,0,0" />
+                <Button Content="CONTINUE LOCALLY" Click="Submit_Click" Background="#8B5CF6" Foreground="White" BorderBrush="#A78BFA" Margin="0,8,0,0" HorizontalAlignment="Stretch" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

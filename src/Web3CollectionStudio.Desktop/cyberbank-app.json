@@ -1,0 +1,12 @@
+{
+  "appId": "web3-collection-studio",
+  "displayName": "CyberBank NFT Studio",
+  "version": "1.0.0",
+  "executablePath": "Web3CollectionStudio.Desktop.exe",
+  "iconPath": "Assets/Brand/collection-studio-app-icon.ico",
+  "capabilities": [
+    "Local PFP, Badge/Gaming, and Digital Art projects",
+    "Local PNG composition and bounded render queue",
+    "Local metadata export"
+  ]
+}

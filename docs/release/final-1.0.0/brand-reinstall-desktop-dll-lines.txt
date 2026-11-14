@@ -1,0 +1,7 @@
+﻿
+web3-collection-studio\docs\release\final-1.0.0\brand-reinstall-inno.log:1592:2
+026-08-25 14:24:36.847   Dest filename: 
+C:\Users\ahmed\AppData\Local\Programs\CyberBank\Web3 Collection 
+Studio\Web3CollectionStudio.Desktop.dll
+
+

@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Web3CollectionStudio.Desktop.Views.NewCollectionWindow"
+        Title="New local collection"
+        Width="520"
+        Height="480"
+        CanResize="False"
+        WindowStartupLocation="CenterOwner"
+        Background="#0B0E20">
+    <Border Padding="28" Background="#0B0E20">
+        <Grid RowDefinitions="auto,auto,auto,*,auto" RowSpacing="14">
+            <StackPanel Spacing="5">
+                <TextBlock Text="NEW LOCAL COLLECTION" FontSize="20" FontWeight="SemiBold" />
+                <TextBlock Text="Create a project locally. You can add PNG layers, traits, rules, previews, and exports after setup." TextWrapping="Wrap" FontSize="12" Foreground="#9AA4C9" />
+            </StackPanel>
+            <StackPanel Grid.Row="1" Spacing="8">
+                <TextBlock Text="COLLECTION NAME" FontSize="10" FontWeight="Bold" LetterSpacing="1" Foreground="#AAA0D6" />
+                <TextBox x:Name="CollectionNameBox" PlaceholderText="e.g. Midnight Masks" />
+            </StackPanel>
+            <StackPanel Grid.Row="2" Spacing="8">
+                <TextBlock Text="PROFILE" FontSize="10" FontWeight="Bold" LetterSpacing="1" Foreground="#AAA0D6" />
+                <RadioButton x:Name="PfpProfile" GroupName="CollectionProfile" IsChecked="True" Content="PFP — 1024 × 1024" />
+                <RadioButton x:Name="BadgeProfile" GroupName="CollectionProfile" Content="Badge / Gaming Item — 1024 × 1024" />
+                <RadioButton x:Name="DigitalArtProfile" GroupName="CollectionProfile" Content="Digital Art — 2048 × 2048" />
+            </StackPanel>
+            <TextBlock x:Name="ValidationText" Grid.Row="3" VerticalAlignment="Bottom" TextWrapping="Wrap" FontSize="11" Foreground="#F0A4B8" />
+            <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="10">
+                <Button Content="Cancel" Click="Cancel_Click" Background="#171C35" Foreground="#CFD4EE" BorderBrush="#303960" />
+                <Button Content="Create locally" Click="Create_Click" Background="#8B5CF6" Foreground="White" BorderBrush="#A78BFA" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

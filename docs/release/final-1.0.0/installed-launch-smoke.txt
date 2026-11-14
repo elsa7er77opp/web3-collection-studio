@@ -1,0 +1,3 @@
+﻿ProcessId: 23124
+Title: CyberBank NFT Studio
+Path: C:\Users\ahmed\AppData\Local\Programs\CyberBank\Web3 Collection Studio\Web3CollectionStudio.Desktop.exe
