@@ -27,3 +27,7 @@ Final 1.0.0 documented.
 ## Author
 
 Ahmed Mohamed Elsayed Elreefy. Engineering work includes requirements, technical decisions, AI-assisted implementation, debugging and acceptance review.
+
+## Installed QA account
+
+The account creation and sign-in scripts under `docs/release/final-1.0.0` require `-QaPassword (Read-Host -AsSecureString)`. Supply a unique disposable local credential for both steps. Reset any existing QA account that used the historical bundled value before reusing that installation.
